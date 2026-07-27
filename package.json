@@ -1,0 +1,39 @@
+{
+  "name": "mern-cms-blog",
+  "version": "1.0.0",
+  "description": "Full MERN Stack Content Management System and Blog Platform",
+  "main": "server/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "seed": "node server/seed.js",
+    "build": "npm run build --prefix client"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.1",
+    "nodemailer": "^9.0.3"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.2"
+  },
+  "keywords": [
+    "mern",
+    "react",
+    "express",
+    "mongodb",
+    "node",
+    "cms",
+    "blog"
+  ],
+  "author": "Aman",
+  "license": "MIT"
+}
