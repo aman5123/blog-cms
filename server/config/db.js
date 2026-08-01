@@ -7,9 +7,9 @@ export const connectDB = async () => {
     const connStr = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/cms_blog';
     mongoose.set('strictQuery', false);
     
-    // Set a short connection timeout so fallback triggers fast if local Mongo is off
+    const timeout = process.env.MONGODB_URI ? 10000 : 2500;
     const conn = await mongoose.connect(connStr, {
-      serverSelectionTimeoutMS: 2500
+      serverSelectionTimeoutMS: timeout
     });
 
     console.log(`MongoDB Connected: ${conn.connection.host}`);
