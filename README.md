@@ -146,4 +146,5 @@ Open your browser and navigate to:
 
 ---
 ## 🛡️ License
+
 MIT License. Built for submission & production readiness.
