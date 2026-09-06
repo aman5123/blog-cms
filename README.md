@@ -1,4 +1,4 @@
-# 🚀 Premium MERN Stack Content Management System & Blog Platform
+# Premium MERN Stack Content Management System & Blog Platform
 
 A modern, full-stack **MERN** (MongoDB, Express.js, React 18, Node.js) Content Management System (CMS) & Blog Platform designed with glassmorphism UI aesthetics, role-based authorization, rich article editor with live split-preview, interactive Chart.js analytics dashboard, comments moderation, bookmarking, and dark/light theme toggle.
 
@@ -145,6 +145,5 @@ Open your browser and navigate to:
 - `PUT /api/settings` - Update site configuration (*Admin*)
 
 ---
-
 ## 🛡️ License
 MIT License. Built for submission & production readiness.
